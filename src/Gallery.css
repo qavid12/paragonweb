@@ -1,0 +1,47 @@
+/* .gallery-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fffaf0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.arrow:hover{
+  background-color: rgba(255, 204, 153, 0.9);
+}
+.arrow.prev {
+  left: 10px;
+}
+.arrow.next {
+  right: 10px;
+}
+/*Dots style*/
+/* .slick-dots {
+  bottom: -20px;
+}
+.custom-dots {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+.slick-dots li.slick-active .custom-dots {
+  background-color: #cc7a00;
+} */ 
