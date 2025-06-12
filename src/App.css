@@ -123,10 +123,12 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .hero-simple .hero-content h1 {
   font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; 
 }
 
 .hero-simple .hero-content p {

@@ -22,9 +22,9 @@ function Footer() {
 
         <div className="footer-contact">
           <h4>Contact Us</h4>
-          <p>📍 123 Tây Hồ, Hà Nội</p>
-          <p>📞 <a href="tel:+84901234567">+84 90 123 4567</a></p>
-          <p>📧 <a href="mailto:contact@paragonspa.vn">contact@paragonspa.vn</a></p>
+          <p>📍 676 Lạc Long Quân, phường Nhật Tân, quận Tây Hồ, thành phố Hà Nội</p>
+          <p>📞 <a href="tel:+84901234567">+84 868998290</a></p>
+          <p>📧 <a href="mailto:contact@paragonspa.vn">paragonspa90@gmail.com</a></p>
         </div>
       </div>
 
