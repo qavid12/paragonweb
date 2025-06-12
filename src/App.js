@@ -25,24 +25,49 @@ function App() {
 }
 
 
+
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleLinkClick = (scrollTop) => {
+    setMenuOpen(false);
+    if (scrollTop !== null) {
+      window.scrollTo({ top: scrollTop, behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="header">
-  <div className="container">
-    <h1 className="logo">Paragon Spa</h1>
-    <nav className="nav">
-      <a href="#home" onClick={(e) => {
-        e.preventDefault();
-        window.scrollTo({top: 0, behavior: 'smooth'});
-      }
-      }>Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+      <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" }}>
+        <h1 className="logo">Paragon Spa</h1>
 
-);
+        {/* Hamburger menu button */}
+        <button
+          className="menu-toggle"
+          onClick={toggleMenu}
+          style={{
+            fontSize: "1.5rem",
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            display: "none",
+          }}
+        >
+          ☰
+        </button>
+
+        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+          <a href="#home" onClick={(e) => { e.preventDefault(); handleLinkClick(0); }}>Home</a>
+          <a href="#services" onClick={() => handleLinkClick(null)}>Services</a>
+          <a href="#contact" onClick={() => handleLinkClick(null)}>Contact</a>
+        </nav>
+      </div>
+    </header>
+  );
 }
 
 function Hero() {
